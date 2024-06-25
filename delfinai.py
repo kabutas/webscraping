@@ -15,8 +15,8 @@ list2 = []
 for block in blocks:
     # print(block.h5.text.split(':'))
     if len(block.h5.text.split(':')) == 2:
-        list1.append(block.h5.text.split(':')[0])
-        list2.append(block.h5.text.split(':')[1])
+        list1.append(block.h5.a.text.split(':')[0])
+        list2.append(block.h5.a.text.split(':')[1])
 
 random.shuffle(list1)
 random.shuffle(list2)
